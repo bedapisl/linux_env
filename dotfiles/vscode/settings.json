@@ -1,0 +1,14 @@
+{
+    "window.zoomLevel": 2,
+    "workbench.colorTheme": "Visual Studio Light",
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 12,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.wordWrap": "on",
+    "explorer.confirmDragAndDrop": false,
+    "rust-analyzer.cargo.features": [
+        "ssr"
+    ]
+}

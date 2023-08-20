@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+alt+b",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "langId": "python",
+            "snippet": "import pdb; pdb.set_trace()"
+        }
+    },
+    { 
+    "key": "ctrl+tab", 
+    "command": "workbench.action.nextEditor" 
+    },
+    { 
+        "key": "ctrl+shift+tab", 
+        "command": "workbench.action.previousEditor" 
+    }
+]

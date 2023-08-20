@@ -1,0 +1,21 @@
+set cpoptions+=x
+
+syntax on
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+set mouse=a
+
+set autoindent
+
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Wq wq
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+
+set nofixendofline
+
+set clipboard=unnamed
