@@ -1,12 +1,11 @@
 
+ln -sf ./dotfiles/vimrc ~/.vimrc
+ln -sf ./dotfiles/bashrc ~/.bashrc
 
-ln -s ./dotfiles/vimrc ~/.vimrc
-ln -s ./dotfiles/bashrc ~/.bashrc
-
+mkdir .config/Code/User/
 
 ln -s ./dotfiles/vscode/keybindings.json ~/.config/Code/User/keybindings.json
 ln -s ./dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
-
 
 mkdir ~/scripts
 
