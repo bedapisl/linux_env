@@ -4,24 +4,6 @@ import shutil
 import subprocess
 
 
-# def read_file(filepath: str) -> str:
-#     with open(filepath, "r") as input_file:
-#         return input_file.read()
-
-
-# def confirmation(question: str) -> bool:
-#     question += " [y/n]"
-#     answer = input(question)
-#     while answer not in ["y", "n"]:
-#         answer = input(question)
-
-#     if answer == "y":
-#         return True
-#     elif answer == "n":
-#         return False
-#     else:
-#         assert False
-
 BACKUP_FOLDER = "./backup"
 
 
@@ -41,22 +23,10 @@ def symlink_file(source: str, destination: str, backup=True) -> None:
 
     os.makedirs(output_dir, exist_ok=True)
 
-    if os.path.isfile(destination):
+    if os.path.isfile(destination) or os.path.islink(destination):
         os.remove(destination)
+
     os.symlink(source, destination)
-
-    # copy = False
-    # if os.path.isfile(destination):
-    #     source_data = read_file(source)
-    #     destination_data = read_file(destination)
-
-    #     if source_data != destination_data:
-    #         copy = confirmation(f"File {source} and  {destination} differs. Owerwrite?")
-    # else:
-    #     copy = True   
-
-    # if copy:
-    #     shutil.copyfile(source, destination)
 
 
 def run_subprocess(command):
