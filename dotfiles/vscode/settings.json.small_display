@@ -1,0 +1,21 @@
+{
+    "workbench.colorTheme": "Visual Studio Light",
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.renderColons": false,
+    "editor.minimap.maxColumn": 80,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.rulers": [
+        80
+    ],
+    "workbench.colorCustomizations": {
+        "tab.activeBorderTop": "#ffffff",
+        "tab.activeBackground": "#dadada"
+    },
+    "editor.inlineSuggest.enabled": true,
+    "security.workspace.trust.untrustedFiles": "open"
+    
+}
