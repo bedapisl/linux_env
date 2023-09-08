@@ -10,6 +10,7 @@ BACKUP_FOLDER = "./backup"
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--full-install", action="store_true")
+    parser.add_argument("--tag", type=str, default=None, required=False)
     args = parser.parse_args()
     return args
 
@@ -46,8 +47,22 @@ def main():
         ("scripts/brightness.sh", "~/scripts/brightness.sh")
     ]
 
+    tag_used = False
     for source, destination in files:
-        symlink_file(os.path.join(os.getcwd(), source), os.path.expanduser(destination))
+        source = os.path.join(os.getcwd(), source)
+        destination = os.path.expanduser(destination)
+        if args.tag:
+            dirname, filename = os.path.split(source)
+            basename, extension = os.path.splitext(filename)
+            source_with_tag = os.path.join(dirname, f"{basename}.{args.tag}{extension}")
+            if os.path.exist(source_with_tag):
+                source = source_with_tag
+                tag_used = True
+
+        symlink_file(source, destination)
+
+    if not tag_used:
+        print(f"Warning: Tag {args.tag} was not used.")
 
     if args.full_install:
         git_email = input("Git email: ")
