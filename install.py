@@ -55,7 +55,7 @@ def main():
             dirname, filename = os.path.split(source)
             basename, extension = os.path.splitext(filename)
             source_with_tag = os.path.join(dirname, f"{basename}.{args.tag}{extension}")
-            if os.path.exist(source_with_tag):
+            if os.path.exists(source_with_tag):
                 source = source_with_tag
                 tag_used = True
 
