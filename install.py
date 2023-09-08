@@ -9,8 +9,8 @@ BACKUP_FOLDER = "./backup"
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--full-install", action="store_true")
-    parser.add_argument("--tag", type=str, default=None, required=False)
+    parser.add_argument("--full-install", action="store_true", help="Use when installing for the first time.")
+    parser.add_argument("--tag", type=str, default=None, required=False, help="Use files with tag in the name, e.g.: settings.small_display.json instead of settings.json, where tag is small_display")
     args = parser.parse_args()
     return args
 
