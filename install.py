@@ -61,7 +61,7 @@ def main():
 
         symlink_file(source, destination)
 
-    if not tag_used:
+    if args.tag and not tag_used:
         print(f"Warning: Tag {args.tag} was not used.")
 
     if args.full_install:
