@@ -6,9 +6,6 @@
     },
     "editor.wordWrap": "on",
     "explorer.confirmDragAndDrop": false,
-    "rust-analyzer.cargo.features": [
-        "ssr"
-    ],
     "rust-analyzer.inlayHints.chainingHints.enable": false,
     "rust-analyzer.inlayHints.closingBraceHints.enable": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
