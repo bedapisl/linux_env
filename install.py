@@ -44,7 +44,8 @@ def main():
         ("dotfiles/vscode/keybindings.json", "~/.config/Code/User/keybindings.json"),
         ("dotfiles/vscode/settings.json", "~/.config/Code/User/settings.json"),
         ("scripts/restart_network_manager.sh", "~/scripts/restart_network_manager.sh"),
-        ("scripts/brightness.sh", "~/scripts/brightness.sh")
+        ("scripts/brightness.sh", "~/scripts/brightness.sh"),
+        ("scripts/fix_time.sh", "~/scripts/fix_time.sh")
     ]
 
     tag_used = False
