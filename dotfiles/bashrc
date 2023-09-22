@@ -123,3 +123,6 @@ alias drtic="ssh -X beda@87.236.197.144"
 alias chrome="google-chrome"
 alias python="python3"
 
+# vim is a default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
