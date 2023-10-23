@@ -32,7 +32,7 @@ def symlink_file(source: str, destination: str, backup=True) -> None:
 
 def run_subprocess(command):
     print(f"Executing: {command}")
-    subprocess.run(command)
+    subprocess.run(command, shell=True)
 
 
 def main():
