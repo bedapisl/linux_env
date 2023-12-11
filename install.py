@@ -46,7 +46,8 @@ def main():
         ("dotfiles/openbox/lxde-rc.xml", "~/.config/openbox/lxde-rc.xml"),
         ("scripts/restart_network_manager.sh", "~/scripts/restart_network_manager.sh"),
         ("scripts/brightness.sh", "~/scripts/brightness.sh"),
-        ("scripts/fix_time.sh", "~/scripts/fix_time.sh")
+        ("scripts/fix_time.sh", "~/scripts/fix_time.sh"),
+        ("scripts/fix_docker_routing.sh", "~/scripts/fix_docker_routing.sh")
     ]
 
     tag_used = False
