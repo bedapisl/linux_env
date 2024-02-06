@@ -252,8 +252,8 @@
     <keybind key="A-F3">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <width>658</width>
-        <height>474</height>
+        <width>666</width>
+        <height>540</height>
       </action>
     </keybind>
     <keybind key="A-F5">
