@@ -15,5 +15,12 @@
     { 
         "key": "ctrl+shift+tab", 
         "command": "workbench.action.previousEditor" 
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "editor.action.codeAction",
+        "args": {
+            "kind": "source.unusedImports",
+        }
     }
 ]
