@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "Visual Studio Light",
     "editor.minimap.enabled": false,
-    // "editor.fontSize": 12,
+    "editor.fontSize": 13,
     "[python]": {
         "editor.formatOnType": true
     },
@@ -35,5 +35,5 @@
         "reportMissingModuleSource": "none"
     },
     "C_Cpp.default.cppStandard": "c++20",
-    "chat.commandCenter.enabled": false
+    "chat.commandCenter.enabled": false,
 }
