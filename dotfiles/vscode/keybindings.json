@@ -8,6 +8,14 @@
             "snippet": "import pdb; pdb.set_trace()"
         }
     },
+    {
+        "key": "ctrl+alt+f",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "langId": "python",
+            "snippet": "from __future__ import annotations"
+        }
+    },
     { 
     "key": "ctrl+tab", 
     "command": "workbench.action.nextEditor" 

@@ -13,9 +13,9 @@
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.renderColons": false,
-    "editor.minimap.maxColumn": 100,
+    "editor.minimap.maxColumn": 120,
     "editor.rulers": [
-        100
+        120
     ],
     "workbench.colorCustomizations": {
         "tab.activeBorderTop": "#ffffff",
@@ -24,7 +24,7 @@
     "editor.inlineSuggest.enabled": true,
     "security.workspace.trust.untrustedFiles": "open",
     "python.analysis.extraPaths": [
-        "/home/beda/.local/lib/python3.11/site-packages/"
+        "/home/beda/.local/lib/python3.13/site-packages/"
     ],
     "yaml.schemaStore.enable": false,
     "cmake.pinnedCommands": [
@@ -35,5 +35,27 @@
         "reportMissingModuleSource": "none"
     },
     "C_Cpp.default.cppStandard": "c++20",
+    "python.analysis.typeCheckingMode": "standard",
     "chat.commandCenter.enabled": false,
+    "explorer.autoReveal": "focusNoScroll",
+    "docker.extension.enableComposeLanguageServer": false,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "explorer.excludeGitIgnore": true
 }

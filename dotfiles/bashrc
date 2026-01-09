@@ -122,7 +122,11 @@ LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-12.1/lib64"
 alias drtic="ssh -X beda@87.236.197.144"
 alias chrome="google-chrome"
 alias python="python3"
+alias nuget="mono /usr/local/bin/nuget.exe"
 
 # vim is a default editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+
+. "$HOME/.local/share/../bin/env"
